@@ -1,0 +1,40 @@
+#read 3 numbers and test sides of triangle
+if [ $# -gt 0 ]
+then
+echo "syntax error"
+exit 1
+fi
+
+
+if [ $# -eq 0 ]
+then
+echo "enter first number"
+read num1
+echo "enter second number"
+read num2
+echo "enter third number"
+read num3
+fi
+
+echo "output"
+if [ `expr $num1 + $num2` -le $num3 -o `expr $num1 + $num3` -le $num2 -o `expr $num2 + $num3` -le $num1 ]
+then
+echo "$num1 $num2 $num3 not the sides of triangle"
+exit
+else
+echo "$num1 $num2 $num3 the sides of triangle"
+fi
+
+
+output
+-------
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh triangle.sh
+enter first number
+3
+enter second number
+5
+enter third number
+6
+output
+3 5 6 the sides of triangle
+
