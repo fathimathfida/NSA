@@ -1,0 +1,33 @@
+#script to find ncr
+#set -vx
+if [ $# -ne 0 ]
+then
+echo "syntax is <$0>"
+exit 1
+fi
+fact()
+{ n1=$1
+i=1
+f=1
+while [ $i -le $n1 ]
+do
+f=`expr $f \* $i`
+i=`expr $i + 1`
+done
+return $f
+}
+echo "enter value for n "
+read n
+echo "enter value for r"
+read r
+fact $n
+
+
+output
+------
+ksb@ksb-ThinkCentre-Edge72:~/nasa$ sh factfno.sh
+enter value for n 
+5
+enter value for r
+3
+ncr = 10
