@@ -20,11 +20,7 @@ fi
 fi
 cp $1 $2
 echo "file copied"
-
-
-
-
-
+---------------------------------------------------------------------
 
 
 output
@@ -33,3 +29,28 @@ ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh modify.sh qqq qq
 Target file exits,overwrite it (y/n)
 y
 file copied
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh modify.sh f3
+
+Syntax is <modify.sh> <src filename><tgt filename>
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh modify.sh f3 f2
+Target file exits,overwrite it (y/n)
+n
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh modify.sh f3 f2
+Target file exits,overwrite it (y/n)
+y
+file copied
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ cat f3
+amazing world
+beautiful world
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ cat f2
+amazing world
+beautiful world
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ sh modify.sh 888 999
+888 is not existing or not an ordinary file 
+ksb@ksb-ThinkCentre-Edge72:~/nasa/nsa$ 
+
+
+
