@@ -22,3 +22,17 @@ rm file2
 exec < $term
 
 
+output
+--------
+ksb@ksb-ThinkCentre-Edge72:~/nasa/delete$ cat f5
+windows
+linux
+ubuntu
+
+ksb@ksb-ThinkCentre-Edge72:~/nasa/delete$ sh delete.sh
+Enter the file name: 
+f5
+ksb@ksb-ThinkCentre-Edge72:~/nasa/delete$ cat f5
+windows
+ubuntu
+
