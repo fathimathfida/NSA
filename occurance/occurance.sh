@@ -21,3 +21,26 @@ done
 echo "Number of occurance of words = $count"
 exit 0
 
+
+output
+--------
+
+ksb@ksb-ThinkCentre-Edge72:~/nasa/occurance$ sh occurance.sh hlo a1 a2
+Number of occurance of words = 2
+ksb@ksb-ThinkCentre-Edge72:~/nasa/occurance$ sh occurance.sh hlo a1 a2
+Number of occurance of words = 2
+ksb@ksb-ThinkCentre-Edge72:~/nasa/occurance$ cat a1
+hlo
+how are you
+ksb@ksb-ThinkCentre-Edge72:~/nasa/occurance$ cat a2
+hlo
+heloooooooooo
+ksb@ksb-ThinkCentre-Edge72:~/nasa/occurance$ 
+
+
+
+
+
+
+
+
