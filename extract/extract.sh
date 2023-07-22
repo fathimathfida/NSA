@@ -18,3 +18,15 @@ done
 exit 0
  
 
+output
+
+ksb@ksb-ThinkCentre-Edge72:~/nasa/extract$ sh extract.sh 2 7 extract.sh
+Range of file from extract.sh :
+if [ $# -le 2 ]
+then
+echo "syntax is <$0> <range> <files....>"
+exit 1
+fi
+n1=$1
+ksb@ksb-ThinkCentre-Edge72:~/nasa/extract$ 
+
