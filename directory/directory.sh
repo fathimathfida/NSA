@@ -17,3 +17,21 @@ fi
 done
 exit 0 
 
+output
+------
+ksb@ksb-ThinkCentre-Edge72:~/nasa/directory$ vi directory.sh
+ksb@ksb-ThinkCentre-Edge72:~/nasa/directory$ sh directory.sh
+a1		<DIR><	 20 -07 -2023 10:42:26
+a3		<DIR><	 20 -07 -2023 10:42:52
+directory.sh		285	 22 -07 -2023 12:03:58
+f8		18	 20 -07 -2023 10:47:25
+f9		22	 20 -07 -2023 10:46:16
+ksb@ksb-ThinkCentre-Edge72:~/nasa/directory$ 
+
+
+
+
+
+
+
+
