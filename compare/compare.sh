@@ -23,3 +23,20 @@ else
 echo "No duplicate file exists"
 fi
 
+
+output
+--------
+ksb@ksb-ThinkCentre-Edge72:~/nasa/compare$ sh compare.sh a1 a2
+a1 a2 differ: byte 2, line 1
+No duplicate file exists
+ksb@ksb-ThinkCentre-Edge72:~/nasa/compare$ sh compare.sh 
+Enter a file name :: 
+a1
+Enter another file name :: 
+a1
+Removed duplicate file
+ksb@ksb-ThinkCentre-Edge72:~/nasa/compare$ 
+
+
+
+
