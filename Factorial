@@ -21,6 +21,14 @@ read n
 echo "enter value for r"
 read r
 fact $n
+nf=$?
+fact $r
+rf=$?
+fact `expr $n - $r`
+nrf=$?
+dr=`expr $rf "*" $nrf`
+ncr=`expr $nf / $dr`
+echo "ncr = $ncr"
 
 
 output
